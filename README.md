@@ -25,17 +25,17 @@ A comprehensive **data-driven dashboard** built with **Python** and **Streamlit*
 
 ## 📂 Project Structure
 supply_chain_optimization/
-├── 📂 dashboard/
-│   └── 📄 app.py              # Main Streamlit application
-├── 📂 data/
-│   └── 📄 raw/                 # Raw dataset
-├── 📂 notebooks/                # Jupyter notebooks for analysis & modeling
-├── 📂 src/                      # Source code for the data pipeline
-│   ├── 📦 data/
-│   ├── 📦 features/
-│   └── 📦 models/
-├── 📄 run_pipeline.py           # Master script to run the backend
-└── 📄 requirements.txt           # Project dependencies
+├── 📂 dashboard/ # Streamlit dashboard
+│ └── app.py # Main Streamlit application
+├── 📂 data/ # Data storage
+│ └── raw/ # Raw dataset
+├── 📂 notebooks/ # Jupyter notebooks (EDA, modeling, experiments)
+├── 📂 src/ # Source code for the data pipeline
+│ ├── 📦 data/ # Data loading & preprocessing
+│ ├── 📦 features/ # Feature engineering scripts
+│ └── 📦 models/ # ML models (training & prediction)
+├── run_pipeline.py # Master script to process data & train models
+└── requirements.txt # Project dependencies
 
 ---
 

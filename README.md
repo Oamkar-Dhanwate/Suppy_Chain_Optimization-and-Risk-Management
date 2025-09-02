@@ -1,41 +1,67 @@
-# 📦 Supply Chain Optimization & Risk Management Dashboard  
+# 📦 Supply Chain Optimization & Risk Management Dashboard
 
-A comprehensive, data-driven dashboard built with **Python** and **Streamlit** to analyze supply chain performance, predict late delivery risks, and provide actionable insights for logistics management.  
-
-🚀 **Live Demo**  
-👉 [Add your Streamlit Community Cloud deployment link here once it’s live]  
+A comprehensive **data-driven dashboard** built with **Python** and **Streamlit** to analyze supply chain performance, predict late delivery risks, and provide actionable insights for logistics management.
 
 ---
 
-## ✨ Key Features  
+## 🚀 Live Demo  
+[Add your Streamlit Community Cloud deployment link here]
 
-- **Executive KPIs**: At-a-glance metrics including **On-Time-In-Full (OTIF) Rate** and **Perfect Order Rate**.  
-- **Interactive Analytics**: Dynamic charts and geographical heatmaps for performance and risk analysis.  
-- **ML-Powered Risk Prediction**: Real-time prediction of late delivery risk using **Random Forest**.  
-- **Optimal Shipping Recommendation**: Intelligent recommendation engine balancing risk & profitability.  
-- **Dynamic Filtering & Data Export**: Filter by **region, shipping mode, date**, and export to CSV.  
+---
+
+## ✨ Key Features
+- **Executive KPIs**: Quick insights with OTIF (On-Time-In-Full) Rate & Perfect Order Rate.  
+- **Interactive Analytics**: Dynamic charts & geographical heatmaps to spot high-risk regions.  
+- **ML-Powered Risk Prediction**: Real-time late delivery risk detection with Random Forest.  
+- **Optimal Shipping Recommendation**: Suggests best shipping mode balancing risk & profit.  
+- **Dynamic Filtering & Export**: Filter by region, mode, date & export results as CSV.  
 
 ---
 
 ## 📸 Dashboard Preview  
-*(Add a screenshot or GIF of your running dashboard here)*  
+(Add a screenshot of your running dashboard here)
 
 ---
 
-## 📂 Project Structure  
+## 📂 Project Structure
+supply_chain_optimization/
+├── 📂 dashboard/
+│   └── 📄 app.py              # Main Streamlit application
+├── 📂 data/
+│   └── 📄 raw/                 # Raw dataset
+├── 📂 notebooks/                # Jupyter notebooks for analysis & modeling
+├── 📂 src/                      # Source code for the data pipeline
+│   ├── 📦 data/
+│   ├── 📦 features/
+│   └── 📦 models/
+├── 📄 run_pipeline.py           # Master script to run the backend
+└── 📄 requirements.txt           # Project dependencies
 
-## 🛠 Tech Stack  
+---
 
-- **Backend**: Python, Pandas, NumPy, Scikit-learn  
-- **Machine Learning**: Random Forest, K-Means, Prophet  
+## 🛠 Tech Stack
+- **Backend**: Python, Pandas, Scikit-learn  
+- **Machine Learning**: Random Forest (classification), K-Means (segmentation), Prophet (forecasting)  
 - **Dashboard**: Streamlit  
 - **Visualization**: Plotly Express  
 
 ---
 
-## ⚙ How to Run Locally  
-
-### 1️⃣ Clone the repository  
+## ⚙️ How to Run Locally
 ```bash
+# Clone the repository
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
+
+# Create & activate virtual environment
+python -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run data pipeline (process data + train ML models)
+python run_pipeline.py
+
+# Launch dashboard
+streamlit run dashboard/app.py

@@ -1,0 +1,10 @@
+# Virtual Environment
+venv/
+
+# Python cache
+__pycache__/
+
+# Ignore large data and model files
+/data/processed/
+/data/raw/
+/models/

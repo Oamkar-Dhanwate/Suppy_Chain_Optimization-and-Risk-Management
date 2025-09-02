@@ -1,79 +1,41 @@
-Supply Chain Optimization & Risk Management Dashboard
-A comprehensive, data-driven dashboard built with Python and Streamlit to analyze supply chain performance, predict late delivery risks, and provide actionable insights for logistics management.
+# 📦 Supply Chain Optimization & Risk Management Dashboard  
 
-🚀 Live Demo
-AddyourStreamlitCommunityClouddeploymentlinkhereonceit 
-′
- slive
-✨ Key Features
-Executive KPIs: At-a-glance metrics including On-Time-In-Full (OTIF) Rate and Perfect Order Rate for a quick overview of supply chain health.
+A comprehensive, data-driven dashboard built with **Python** and **Streamlit** to analyze supply chain performance, predict late delivery risks, and provide actionable insights for logistics management.  
 
-Interactive Analytics: Dynamic charts and a geographical heatmap to visualize performance, identify high-risk regions, and analyze profitability.
+🚀 **Live Demo**  
+👉 [Add your Streamlit Community Cloud deployment link here once it’s live]  
 
-ML-Powered Risk Prediction: A real-time tool, powered by a Random Forest model, to predict the late delivery risk for new orders.
+---
 
-Optimal Shipping Recommendation: An intelligent feature that recommends the best shipping mode based on a balance of delivery risk and profitability.
+## ✨ Key Features  
 
-Dynamic Filtering & Data Export: Users can filter data by region, shipping mode, and date, and export the results to a CSV file.
+- **Executive KPIs**: At-a-glance metrics including **On-Time-In-Full (OTIF) Rate** and **Perfect Order Rate**.  
+- **Interactive Analytics**: Dynamic charts and geographical heatmaps for performance and risk analysis.  
+- **ML-Powered Risk Prediction**: Real-time prediction of late delivery risk using **Random Forest**.  
+- **Optimal Shipping Recommendation**: Intelligent recommendation engine balancing risk & profitability.  
+- **Dynamic Filtering & Data Export**: Filter by **region, shipping mode, date**, and export to CSV.  
 
-📸 Dashboard Preview
-Addascreenshotofyourrunningdashboardhere.Thisisagreatwaytoshowcaseyourwork!
-📂 Project Structure
-supply_chain_optimization/
-├── 📂 dashboard/
-│   └── 📄 app.py              # Main Streamlit application
-├── 📂 data/
-│   └── 📄 raw/                 # Raw dataset
-├── 📂 notebooks/                # Jupyter notebooks for analysis & modeling
-├── 📂 src/                      # Source code for the data pipeline
-│   ├── 📦 data/
-│   ├── 📦 features/
-│   └── 📦 models/
-├── 📄 run_pipeline.py           # Master script to run the backend
-└── 📄 requirements.txt           # Project dependencies
+---
 
+## 📸 Dashboard Preview  
+*(Add a screenshot or GIF of your running dashboard here)*  
 
+---
 
-🛠 Tech Stack
-Backend: Python, Pandas, Scikit-learn
+## 📂 Project Structure  
 
-Machine Learning: Random Forest (for classification), K-Means (for segmentation), Prophet (for forecasting)
+## 🛠 Tech Stack  
 
-Dashboard: Streamlit
+- **Backend**: Python, Pandas, NumPy, Scikit-learn  
+- **Machine Learning**: Random Forest, K-Means, Prophet  
+- **Dashboard**: Streamlit  
+- **Visualization**: Plotly Express  
 
-Plotting: Plotly Express
+---
 
-⚙ How to Run Locally
-Clone the repository:
+## ⚙ How to Run Locally  
 
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+### 1️⃣ Clone the repository  
+```bash
+git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
-
-
-
-Set up the environment:
-
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
-
-
-
-Run the data pipeline:
-This script processes the raw data and trains the ML models. This step is crucial as it generates the files the dashboard depends on.
-
-python run_pipeline.py
-
-
-
-Launch the dashboard:
-
-streamlit run dashboard/app.py
-
-
-
-📊 Data Source
-This project uses the "DataCo Global Supply Chain" dataset, which is publicly available on Kaggle.
-
-📄 License
-This project is licensed under the MIT License.

@@ -65,3 +65,13 @@ python run_pipeline.py
 
 # Launch dashboard
 streamlit run dashboard/app.py
+
+## 📊 Data Source
+This project uses the **[DataCo Global Supply Chain](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis)** dataset, which is publicly available on Kaggle.
+
+---
+
+## 📄 License
+This project is licensed under the **MIT License**.  
+See the [LICENSE](LICENSE) file for details.
+

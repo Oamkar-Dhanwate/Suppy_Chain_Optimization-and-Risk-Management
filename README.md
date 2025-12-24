@@ -24,6 +24,7 @@ A comprehensive **data-driven dashboard** built with **Python** and **Streamlit*
 ---
 
 ## 📂 Project Structure
+```
 supply_chain_optimization/
 ├── 📂 dashboard/ # Streamlit dashboard
 │ └── app.py # Main Streamlit application
@@ -36,7 +37,7 @@ supply_chain_optimization/
 │ └── 📦 models/ # ML models (training & prediction)
 ├── run_pipeline.py # Master script to process data & train models
 └── requirements.txt # Project dependencies
-
+```
 ---
 
 ## 🛠 Tech Stack
@@ -48,28 +49,37 @@ supply_chain_optimization/
 ---
 
 ## ⚙️ How to Run Locally
-```bash
+
 # Clone the repository
+```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
+```
 
 # Create & activate virtual environment
+```bash
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
+```
 
 # Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
 # Run data pipeline (process data + train ML models)
+```bash
 python run_pipeline.py
+```
 
 # Launch dashboard
+```bash
 streamlit run dashboard/app.py
+```
 
 ## 📊 Data Source
 This project uses the **[DataCo Global Supply Chain](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis)** dataset, which is publicly available on Kaggle.
 
----
 
 ## 📄 License
 This project is licensed under the **MIT License**.  
